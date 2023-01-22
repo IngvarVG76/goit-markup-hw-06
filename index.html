@@ -405,17 +405,112 @@
             </li>
           </ul>
         </div>
+        <div class="subscription-wrap">
+          <p class="subscription-text">Subscribe</p>
+          <div class="subscription-form">
+            <label for="user_email"></label>
+            <input
+              type="email"
+              name="email"
+              id="user_email"
+              class="subscription-form-input"
+            />
+            <button type="submit" slass="subscribe-btn">
+              Subscribe
+              <svg class="subscribe-btn-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-subscribe"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <!-- ========================================= Modal window =========================================  -->
+    <div class="backdrop" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
-          <svg class="modal-close-icon" width="24" height="24">
+          <svg class="modal-close-icon" width="18" height="18">
             <use href="./images/icons.svg#icon-modal-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+
+        <form>
+          <div class="modal-form">
+            <label>
+              <span class="modal-name">Name</span>
+              <span class="modal-name-wrap">
+                <input class="modal-name-input" type="text" name="name" />
+                <svg class="modal-name-icon" width="12" height="12">
+                  <use href="./images/icons.svg#icon-name"></use>
+                </svg>
+              </span>
+            </label>
+
+            <label>
+              <span class="modal-phone">Phone</span>
+              <span class="modal-phone-wrap">
+                <input
+                  class="modal-phone-input"
+                  type="tel"
+                  name="phone-number"
+                />
+                <svg class="modal-phone-icon" width="13" height="13">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </span>
+            </label>
+
+            <label>
+              <span class="modal-email">Email</span>
+              <span class="modal-email-wrap">
+                <input class="modal-email-input" type="email" name="email" />
+                <svg class="modal-phone-icon" width="15" height="12">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </span>
+            </label>
+
+            <label>
+              <span class="modal-feedback">Comment</span>
+              <span class="modal-feedback-wrap">
+                <textarea
+                  class="modal-feedback-input"
+                  name="feedback"
+                  rows="5"
+                  placeholder="Text input"
+                ></textarea>
+              </span>
+            </label>
+          </div>
+
+          <div class="modal-terms">
+            <input
+              class="modal-terms-check visually-hidden"
+              type="checkbox"
+              name="terms"
+              id="terms"
+              value="true"
+            />
+
+            <label for="terms" class="modal-terms-text">
+              <span class="modal-terms-svg">
+                <svg class="modal-terms-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-checkbox"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the <span class="modal-terms-link"><a class="link" href="">Privacy Policy</a></span>
+            </label>
+            
+          </div>
+
+          <div class="modal-submit">
+            <button class="modal-submit-btn" type="submit">Send</button>
+          </div>
+        </form>
       </div>
     </div>
+    <!-- ====================================== Modal window script ======================================  -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
