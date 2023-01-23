@@ -761,18 +761,15 @@ textarea {
 
 /* ================== Terms ================== */
 .modal-terms {
+  display: flex;
+  align-content: center;
   margin-top: 16px;
   margin-bottom: 24px;
-}
-
-.modal-terms-check {
-  display: block;
 }
 
 .modal-terms-text {
   display: flex;
   align-content: center;
-  position: relative;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.33;
