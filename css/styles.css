@@ -575,10 +575,10 @@ body {
 }
 
 .subscribe-btn-wrap {
-  position: relative;
 }
 
 .subscribe-btn {
+  position: relative;
   display: flex;
   align-content: center;
   width: 165px;
@@ -599,8 +599,7 @@ body {
 .subscribe-btn:focus,
 .subscribe-btn:hover {
   background-color: var(--pressed-state-color);
- }
-
+}
 
 .subscribe-btn-icon {
   position: absolute;
@@ -682,7 +681,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
 
 /*=================== Form ===================*/
@@ -691,16 +690,21 @@ body {
   display: block;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
   color: #8e8f99;
   margin-bottom: 4px;
 }
 
+.input-text.first-input-text {
+  line-height: 1.33;
+  letter-spacing: 0.04em;
+}
+
 .input-text-wrap {
   display: block;
-  margin-bottom: 6px;
   position: relative;
+  margin-bottom: 8px;
 }
 
 .input-text-input {
@@ -734,6 +738,7 @@ body {
 /* ================== Feedback ================== */
 
 .modal-feedback-input {
+  display: block;
   width: 100%;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -756,10 +761,12 @@ textarea {
 
 /* ================== Terms ================== */
 .modal-terms {
-  /* display: flex;
-  align-content: center; */
   margin-top: 16px;
   margin-bottom: 24px;
+}
+
+.modal-terms-check {
+  display: block;
 }
 
 .modal-terms-text {
@@ -792,7 +799,7 @@ textarea {
   border-color: #404bbf;
 }
 
-.modal-terms-link {
+.modal-terms-link .link {
   margin-left: 3pt;
   font-weight: 400;
   font-size: 12px;
